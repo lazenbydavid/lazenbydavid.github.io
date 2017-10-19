@@ -37,31 +37,21 @@
 
     Canvas is a little bit different from other HTML tags. Canvas allows the use of JavaScript in a window for many different applications.<br>
     You can create mini games, animations, or pictures, as well as other things in JavaScript and then pull them into the HTML canvas window<br>
-    Instead of using source="filename" you would use id="objectname" Other than that the syntax is the same.
+    Instead of using source="filename" you would use id="objectname" Other than that the syntax is the same.<br>
+
+
 
     </p>
 
-    <body onload="draw();">
-        <canvas id="canvas" width="150" height="150"></canvas>
-    </body>
+
+
 
 
 
     <!-- Put this at the bottom of your "body" tag. It will load the file "script.js" and run your javascript -->
     <script src="./scripts.js">
 
-        function draw() {
-      var canvas = document.getElementById('canvas');
-      if (canvas.getContext) {
-        var ctx = canvas.getContext('2d');
 
-        ctx.fillStyle = 'rgb(200, 0, 0)';
-        ctx.fillRect(10, 10, 50, 50);
-
-        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
-        ctx.fillRect(30, 30, 50, 50);
-                            }
-                        }
 
     </script>
 
