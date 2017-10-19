@@ -25,7 +25,7 @@
     as well.<br>
     There are times when these features are usefull, for example in the video on this page I set it to autoplay on a loop, but<br>
     this video has no sound, and is not very distracting. you can also add a conrols feature to allow end users to pause features<br>
-    I have also added this feature to this video.
+    I have also added this feature to this video.<br>
 
 
         <!--this will play the mp4 of the snowglobe on a loop-->
@@ -41,11 +41,27 @@
 
     </p>
 
+    <body onload="draw();">
+        <canvas id="canvas" width="150" height="150"></canvas>
+    </body>
+
 
 
     <!-- Put this at the bottom of your "body" tag. It will load the file "script.js" and run your javascript -->
     <script src="./scripts.js">
 
+        function draw() {
+      var canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = 'rgb(200, 0, 0)';
+        ctx.fillRect(10, 10, 50, 50);
+
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.fillRect(30, 30, 50, 50);
+                            }
+                        }
 
     </script>
 
