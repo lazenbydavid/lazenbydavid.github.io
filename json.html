@@ -8,14 +8,27 @@
 </head>
 <body>
     <!-- Put your HTML and what you want to say on your site here -->
-    <p>JSON Turtorials</p>
+    <h2>JSON Turtorials</h2>
 
     <a href="index.html">Home</a>
+
+
+    <p>
+
+    JSON stringify, and parse are used to turn an object, and arrays into a strings, and then reparse those strings back into<br>
+    an object, or array. This is mainly used as a way to move objects, and strings around to things like web servers, databases, <br>
+    and through API.<br>
+    <br>
+    Say we have an object that we have created like <xmp>var obj = { "name":"John", "age":30, "city":"New York"};</xmp>
+
+    </p>
 
 
     <!-- Put this at the bottom of your "body" tag. It will load the file "script.js" and run your javascript -->
     <script src="./scripts.js">
 
+        var myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
 
     </script>
 
