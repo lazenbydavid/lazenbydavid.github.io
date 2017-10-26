@@ -2,6 +2,9 @@
 
     font-family: sans-serif;
      background: yellow;
+     border-width: 15px;
+     border-color: black;
+     border-style: solid;
 }
 
 h2 {
