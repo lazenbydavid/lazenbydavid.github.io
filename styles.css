@@ -5,6 +5,7 @@
      border-width: 15px;
      border-color: black;
      border-style: solid;
+     padding: 2cm;
 }
 
 h2 {
@@ -12,4 +13,9 @@ h2 {
     font-weight: bold;
     text-align: center;
     color: red;
+}
+
+div.ex1 {
+
+
 }
