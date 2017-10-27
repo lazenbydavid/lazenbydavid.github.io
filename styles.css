@@ -3,9 +3,11 @@
     font-family: sans-serif;
      background: yellow;
      border-width: 15px;
-     border-color: black;
+     border-color: grey;
      border-style: solid;
      padding: 2cm;
+     margin: 0;
+     text-align: center;
 }
 
 h2 {
