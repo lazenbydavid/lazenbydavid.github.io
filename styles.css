@@ -1,7 +1,7 @@
  body {
 
     font-family: sans-serif;
-     background: yellow;
+     background: #00ffff;
      border-width: 15px;
      border-color: grey;
      border-style: solid;
@@ -19,7 +19,5 @@ h2 {
 
 div.ex1 {
 
-    border: 15px;
-    border-color: black;
 
 }
