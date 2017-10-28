@@ -12,9 +12,83 @@
 
     <a href="index.html">Home</a>
 
+    <h2>Loops</h2>
+
+    Loops are handy if you need to run a piece of code over and over again. This can be used for a counting function,<br>
+    or to display something like a inventory, or many other uses. The most common is the for statement.<br>
+    If I were to write <xmp><code>
+    var text = "";
+        var i;
+        for (i = 0; i < 5; i++) {
+            text += "the number is " + i + "<br>";
+        }
+                    document.getElementById("counting").innerHTML = text;
+
+    </xmp></code>Then it would produce a counter like this.<br>
+    <id="counting"><br>
+    <br><br>
+    <h2>Conditional Statements</h2>
+
+    Conditional statements set up a list of conditions that if met will execute the command for that line. They<br>
+    start with an "if", and can run through more condtions with "else if". It is good practice to finish a conditional<br>
+    statement with a final "else" statement with no condtion to be met, this can output an error message or code<br>
+    letting the user know that none of the condtions were met.<br>
+    an example of this will be on the next section for functions.
+        <br><br>
+    <h2>Functions</h2>
+
+    A function is a block of code that performs a task when called. You will want to make a function when you want<br>
+    to reuse code multiple times. You can use many different types of script in your functions to produce the results<br>
+    you are looking for.<br>
+    So if I create this function using a conditional statement to greet users, it would look like this.<br>
+    <xmp><code>
+    function greetfunct() {
+            var txt;
+            var person = prompt("Who are you?");
+            if (person == "Bob"){
+                txt = "Hello " + person + " lets get started.";
+            }
+            else if (person == "Mary") {
+                txt = "Hello " + person + " lets get started.";
+            }
+            else () {
+                tst = "I don't talk to strangers"
+            }
+            document.getElementById("greet").innerHTML = txt;
+        }
+    </code></xmp>
+    <button onclick="greetfunct()">Who are you</button>
+    <a id="greet"></a>
+
+
+
 
     <!-- Put this at the bottom of your "body" tag. It will load the file "script.js" and run your javascript -->
     <script src="./scripts.js">
+
+        var text = "";
+        var i;
+        for (i = 0; i < 5; i++) {
+            text += "the number is " + i + "<br>";
+
+                    document.getElementById("counting").innerHTML = text;
+                }
+
+        function greetfunct() {
+            var txt;
+            var person = prompt("Who are you?");
+            if (person == "Bob"){
+                txt = "Hello " + person + " lets get started.";
+            }
+            else if (person == "Mary") {
+                txt = "Hello " + person + " lets get started.";
+            }
+            else () {
+                tst = "I don't talk to strangers"
+            }
+        document.getElementById("greet").innerHTML = txt;
+        }
+
 
 
     </script>
