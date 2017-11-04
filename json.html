@@ -28,8 +28,11 @@
     JSON Parse is the reverse of strinigy. Once you have turned your object, or array into a string, and passed it to where you<br>
     want it to be, you can change it back into an object by using parse. So say we now take this string, and pass it back through<br>
     parse like this <xmp>
-
-        </xmp>
+        var obj1 = JSON.parse('{name":"John", "age":30, "city":"New York"}');
+        document.getElementById("parse").innerHTML = obj1.name + ", " obj1.age;
+        </xmp><br>
+        The object should be able to pass name and age now.
+        <a id="parse"></a>
 
 
     </p>
@@ -43,7 +46,8 @@
         var myJSON = JSON.stringify(obj);
         document.getElementById("string").innerHTML = myJSON;
 
-
+        var obj1 = JSON.parse('{name":"John", "age":30, "city":"New York"}');
+        document.getElementById("parse").innerHTML = obj1.name + ", " obj1.age;
 
     </script>
 
