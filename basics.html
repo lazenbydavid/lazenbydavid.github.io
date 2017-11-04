@@ -10,40 +10,44 @@
     <!-- Put your HTML and what you want to say on your site here -->
     <a href="index.html">Home</a>
 
-    <p>Loops, conditional statments, Functions, Variables, Parameter, Arrays,<br> Associative Arrays
+    <p>Loops, conditional statments, Functions, Variables, Parameter, Arrays,<br> Associative Arrays</p>
 
 
 
     <h2>Loops</h2>
 
-    Loops are handy if you need to run a piece of code over and over again. This can be used for a counting function,<br>
+    <p>Loops are handy if you need to run a piece of code over and over again. This can be used for a counting function,<br>
     or to display something like a inventory, or many other uses. The most common is the for statement.<br>
-    If I were to write <xmp><code>
+        If I were to write<br></p>
+   <!-- <xmp>
     var text = "";
         var i;
         for (i = 0; i < 5; i++) {
             text += "the number is " + i + "<br>";
         }
-                    document.getElementById("counting").innerHTML = text;
-
-    </xmp></code>Then it would produce a counter like this.<br>
-    <id="counting"></id><br>
+             document.getElementById("counting").innerHTML = text;
+    </xmp>-->
+        <br>
+    <p>Then it would produce a counter like this.<br></p>
+    <a id="counting"></a><br>
     <br><br>
     <h2>Conditional Statements</h2>
 
+    <p>
     Conditional statements set up a list of conditions that if met will execute the command for that line. They<br>
     start with an "if", and can run through more condtions with "else if". It is good practice to finish a conditional<br>
     statement with a final "else" statement with no condtion to be met, this can output an error message or code<br>
     letting the user know that none of the condtions were met.<br>
     an example of this will be on the next section for functions.
-        <br><br>
+        <br><br></p>
     <h2>Functions & Prameters</h2>
 
+    <p>
     A function is a block of code that performs a task when called. You will want to make a function when you want<br>
     to reuse code multiple times. You can use many different types of script in your functions to produce the results<br>
     you are looking for. The ifelse statements here would be the parameters.<br>
-    So if I create this function using a conditional statement to greet users, it would look like this.<br>
-    <xmp><code>
+    So if I create this function using a conditional statement to greet users, it would look like this.<br></p>
+    <xmp>
     function greetfunct() {
             var txt;
             var person = prompt("Who are you?");
@@ -58,9 +62,9 @@
             }
             document.getElementById("greet").innerHTML = txt;
         }
-    </code></xmp>
+    </xmp>
 
-    Here is the output.
+    <p>Here is the output.</p>
     <button onclick="greetfunct()">Who are you</button>
     <a id="greet"></a>
         <br><br>
@@ -72,17 +76,19 @@
         <br><br>
     <h2>Arrays & Associate Arrays</h2>
 
+    <p>
     Arrays are variables with multiple values attached in an index. An associative array uses a named index verses<br>
     calling the valuses by number. The important thing to remember when using an array is that the first value in the<br>
     array is called with a 0. So if you have an array of "var fruit = ["pear", "Pinapple", "Orange"]; Pear would be<br>
-    called with a 0, and Pinapple would be called with a 1 when accessing the array.
+        called with a 0, and Pinapple would be called with a 1 when accessing the array.</p>
         <br><br>
     <h2>Object Creation Function</h2>
 
+    <p>
     We know how functions work from the earlier section. You can also create objects with a function by giving the<br>
     function a property which is a list of parameters then using the "this" keyword, then populating them with variables using the "new"<br>
-    keyword. You can then use those variables with the values that have been added. Lets see how this works.<br>
-    <xmp><code>
+    keyword. You can then use those variables with the values that have been added. Lets see how this works.<br></p>
+    <xmp>
     function house(where, bedroom, bathroom) {
         this.town = where;
         this.rooms = bedroom;
@@ -91,16 +97,18 @@
 
     var beachhouse = new house("Corona", 3, 2);
     var townhouse = new house("Boise", 4, 2)
-    </code></xmp>
+    </xmp>
+    <p>
     So with this function I am creating two new objects with my variables, a beach house in Corona with 3 bedrooms and <br>
-    2 bathrooms, and a townhouse in Boise, with 4 bedrooms and 2 bathrooms.
+        2 bathrooms, and a townhouse in Boise, with 4 bedrooms and 2 bathrooms.</p>
         <br><br>
     <h2>Inheritance</h2>
 
+    <p>
     Inheritance works when an object is nested within another object inheriting traits from the parent object. In our last<br>
     example we have the "where" object that tells us what city the house is in. if we want to break that down a little more<br>
-    we can use the this keyword inside the where to create a further breakdown. For example.<br>
-    <xmp><code>
+        we can use the this keyword inside the where to create a further breakdown. For example.<br></p>
+    <xmp>
     function house(where, bedroom, bathroom) {
         this.town = {
         city,
@@ -109,11 +117,12 @@
         this.rooms = bedroom;
         this.bath = bathroom;
         }
-    </code></xmp>
+    </xmp>
+    <p>
     So with this change we can now call "this.town" to call both city, and state, or if we want to break it down further we can<br>
-    call just city with "this.town.city"
+        call just city with "this.town.city"</p>
 
-    </p>
+
 
 
 
